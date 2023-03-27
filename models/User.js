@@ -2,32 +2,32 @@ const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
     name: {
-        typeof: String,
-        maxlength: 50
+        type: String,
+        maxLength: 50
     },
     email: {
-        typeof: String,
+        type: String,
         trim: true,
         unique: 1
     },
     password: {
-        typeof: String,
-        maxlength: 50
+        type: String,
+        maxLength: 50
     },
     lastname: {
-        typeof: String,
-        maxlength: 50
+        type: String,
+        maxLength: 50
     },
     role: {
-        typeof: Number,
+        type: Number,
         default: 0
     },
     image: String,
     token: {
-        typeof: String
+        type: String
     },
     tokenExp: {
-        typeof: Number
+        type: Number
     }
 })
 
